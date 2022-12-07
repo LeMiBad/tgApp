@@ -4,10 +4,10 @@ import CategoryList from "../CategoryList/CategoryList"
 
 
 const StyledHeader = styled.div`
-    width: 100%;
-    padding: 0 5%;
-    display: flex;
+    width: 90%;
+    margin: 0 auto;
     gap: 10px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 14px;

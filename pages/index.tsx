@@ -44,7 +44,6 @@ export default function Home() {
         <Header/>
         <StyledCategoryName>{currentCategory}</StyledCategoryName>
         <ProductList/>
-        <OrderButtons></OrderButtons>
       </>
   )
 }

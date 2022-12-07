@@ -4,9 +4,9 @@ import { $category } from "../../store/pickedCategory"
 
 
 const StyledProductList = styled.div`
-    padding: 0 5%;
     display: flex;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     flex-direction: column;
     gap: 10px;
 `
@@ -52,6 +52,17 @@ const ProductList = () => {
                     <StyledProductImg/>
                     <h3>{curItem}</h3>
                 </StyledProductItem>
+            </StyledProductRow>
+            <StyledProductRow>
+                <StyledProductItem>
+                    <StyledProductImg/>
+                    <h3>{curItem}</h3>
+                </StyledProductItem>
+                <StyledProductItem>
+                    <StyledProductImg/>
+                    <h3>{curItem}</h3>
+                </StyledProductItem>
+
             </StyledProductRow>
             <StyledProductRow>
                 <StyledProductItem>
