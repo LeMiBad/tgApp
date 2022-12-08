@@ -1,4 +1,6 @@
-import { useEffect } from "react"
+import Head from "next/head"
+import Script from "next/script"
+import { useEffect, useState } from "react"
 import styled from "styled-components"
 import BasketIcon from "../../icons/BasketIcon"
 import CategoryList from "../CategoryList/CategoryList"
@@ -21,12 +23,17 @@ const StyledHeaderSection = styled.div`
 
 
 const Header = () => {
-    
+    const [tgproff, setTgproff] = useState('g')
+
     useEffect(() => {
-        console.log(window)
-    })
+        setTgproff(window.Telegram.WebApp)
+    }, [])
 
     return <>
+        <h1>{tgproff}</h1>
+        <Head>
+            <Script src='https://telegram.org/js/telegram-web-app.js'></Script>
+        </Head>
         <StyledHeader>
             <CategoryList/>
             <StyledHeaderSection>

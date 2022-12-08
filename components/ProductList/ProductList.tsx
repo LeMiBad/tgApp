@@ -20,11 +20,11 @@ const StyledProductRow = styled.div`
 
 const StyledProductItem = styled.div`
     display: flex;
-    width: 40vw;
+    width: 43vw;
     flex-direction: column;
 `
 const StyledProductImg = styled.div`
-    height: 40vw;
+    height: 43vw;
     background-size: contain !important;
     background: url('https://papik.pro/uploads/posts/2021-09/1631839563_11-papik-pro-p-krasivie-kvadratnie-risunki-12.jpg');
 `
