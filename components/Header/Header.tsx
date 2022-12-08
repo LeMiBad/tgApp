@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import styled from "styled-components"
 import BasketIcon from "../../icons/BasketIcon"
 import CategoryList from "../CategoryList/CategoryList"
@@ -20,6 +21,11 @@ const StyledHeaderSection = styled.div`
 
 
 const Header = () => {
+    
+    useEffect(() => {
+        console.log(window)
+    })
+
     return <>
         <StyledHeader>
             <CategoryList/>
